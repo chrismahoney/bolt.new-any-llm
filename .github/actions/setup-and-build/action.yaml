@@ -1,10 +1,6 @@
 name: Setup and Build
 description: Generic setup action
 inputs:
-  pnpm-version:
-    required: false
-    type: string
-    default: '9.4.0'
   node-version:
     required: false
     type: string
@@ -16,7 +12,6 @@ runs:
   steps:
     - uses: pnpm/action-setup@v4
       with:
-        version: ${{ inputs.pnpm-version }}
         run_install: false
 
     - name: Set Node.js version to ${{ inputs.node-version }}
