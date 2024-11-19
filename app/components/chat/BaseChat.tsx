@@ -18,7 +18,7 @@ import styles from './BaseChat.module.scss';
 import type { ProviderInfo } from '~/utils/types';
 
 const EXAMPLE_PROMPTS = [
-  { text: 'Build a todo app in React using Tailwind' },
+  { text: 'Make a fun learning game using React, Mantine UI and SCSS' },
   { text: 'Build a simple blog using Astro' },
   { text: 'Create a cookie consent form using Material UI' },
   { text: 'Make a space invaders game' },
