@@ -2,6 +2,12 @@
 
 bindings=""
 
+# Check if .env.local exists
+if [ ! -f .env.local ]; then
+  echo "Error: .env.local file not found."
+  exit 1
+fi
+
 while IFS= read -r line || [ -n "$line" ]; do
   if [[ ! "$line" =~ ^# ]] && [[ -n "$line" ]]; then
     name=$(echo "$line" | cut -d '=' -f 1)
